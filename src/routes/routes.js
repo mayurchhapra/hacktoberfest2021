@@ -1,4 +1,5 @@
 const healthCheck = require('./v1/health-check');
+const sureshmController = require('./v1/sureshm');
 
 const mayur = require('./v1/mayur')
 
@@ -14,6 +15,7 @@ const defineRoute = (application, versionTag, controllers) => {
 module.exports = (app) => {
   defineRoute(app, "v1", {
     'health-check': healthCheck,
-    'mayur': mayur
+    'mayur': mayur,
+    'sureshm': sureshmController
   });
 };
