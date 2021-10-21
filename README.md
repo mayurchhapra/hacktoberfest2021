@@ -86,7 +86,7 @@ git push -u origin <your_branch_name>
 
 7. Create a <a href="https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request" title="Pull Request">Pull-Request</a> to `main`.
 
-8. Congratulations! 🎉 you've made your contribution to <a href="https://github.com/Buddhad/Contribution_Website" title="Contribution_Website">Contribution Website</a>. ✌️ ❤️ 💥
+8. Congratulations! 🎉 you've made your contribution to <a href="https://github.com/mayurchhapra/hacktoberfest2021" title="Hacktoberfest2021">Mayur Chhapra's Hacktoberfest2021</a>. ✌️ ❤️ 💥
 
 <h2 id="contribute">Contributing</h2>
 <p>
