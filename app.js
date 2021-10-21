@@ -2,9 +2,12 @@ const PORT = 3000
 
 const express = require('express');
 const app = express();
+const route = require('./src/routes/routes');
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
+
+route(app);
 
 app.use('/', (req, res, next) => {
   res
