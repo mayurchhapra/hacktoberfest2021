@@ -1,0 +1,10 @@
+.DS_Store
+.env
+npm-debug.log
+node_modules
+dist
+logs
+keys
+env
+request_logs
+.nyc_output
