@@ -2,6 +2,7 @@ const healthCheck = require('./v1/health-check');
 const sureshmController = require('./v1/sureshm');
 
 const mayur = require('./v1/mayur')
+const sumit = require('./v1/sumit');
 
 const defineRoute = (application, versionTag, controllers) => {
   const versionPath = versionTag ? `/${versionTag}/` : `/`;
@@ -16,6 +17,7 @@ module.exports = (app) => {
   defineRoute(app, "v1", {
     'health-check': healthCheck,
     'mayur': mayur,
-    'sureshm': sureshmController
+    'sureshm': sureshmController,
+    'sumit': sumit
   });
 };
