@@ -1,0 +1,37 @@
+.main{
+text-align: center;
+color: solid black;
+font-size: 50px;
+}
+
+.table{
+border: 4px outset red;
+background-color:pink;
+}
+
+#image{
+height:500px;
+width:600px;
+float:left;}
+
+#leave{
+clear:left;}
+
+.para{
+font-size:30px;
+font-family:Arial;
+}
+
+.this{
+font-size:30px;}
+
+#whole{
+background-color: rgb(255,156,2);
+}
+
+.warn{
+color:red;
+font-size:15px;}
+
+#large{
+font-size: 20px;}
