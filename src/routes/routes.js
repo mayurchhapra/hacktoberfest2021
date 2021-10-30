@@ -4,6 +4,8 @@ const sureshmController = require('./v1/sureshm');
 const mayur = require('./v1/mayur')
 const sumit = require('./v1/sumit');
 
+const maahi = require('./v1/maahi');
+
 const defineRoute = (application, versionTag, controllers) => {
   const versionPath = versionTag ? `/${versionTag}/` : `/`;
   for (const controller in controllers) {
@@ -18,6 +20,7 @@ module.exports = (app) => {
     'health-check': healthCheck,
     'mayur': mayur,
     'sureshm': sureshmController,
-    'sumit': sumit
+    'sumit': sumit,
+    'maahi': maahi
   });
 };
