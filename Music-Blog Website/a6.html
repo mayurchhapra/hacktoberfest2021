@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Star Singers</title>
+<link rel="stylesheet" type="text/css" href="a6.css">
+<script>
+function check(){
+var m=document.getElementById("fname").value;
+if(m==""){
+/* if user doesn't enter any value then the below messag will be printed*/
+document.getElementById("msg").innerHTML=" Please enter your name";}
+}
+function validate(){
+/*the below msg will be popped up after submitting the form*/
+alert("Form Submitted");
+}
+function checkit(){
+var v=document.getElementById("pass").value;
+var w=document.getElementById("pass1").value;
+if(v!=w){
+alert("passwords not matching");
+return false;
+}
+else{return true;
+}}
+function scan(){
+var x=document.getElementById("age").value;
+if(x==""){
+document.getElementById("msg1").innerHTML=" Fill this out";
+}}
+</script>
+</head>
+<body id="whole">
+<!--from here the description starts-->
+<h1 class="main">Music is Life</h1>
+<p class="para"><em>This website will help music lovers to improve their singing skills and instrument playing skills.</em></p>
+<p class="para"><em>The most important things to learn anythinng are:</em></p>
+<ul class="para"><em>
+<li>Determination</li>
+<li>Confidence</li>
+<li>Focus</li>
+<li>Hardwork</li></em>
+</ul><br>
+<img id="image" src="https://wtzupcity.com/upload/51497wtzupcitylivemusicbyparraeventkochichristmas.jpg" title="Music"/>
+<p class="para"><em> It's always easy to sing a song or play an instrument when you sing/play it with your whole heart.We will help you to learn each and everything about music from the
+very begining.If you are a music lover then its the best palce to learn it.We will try our best to make your journey with us as much fun and knowledgable as we can.
+Remember you are talented. The ony thing you need to do is just polish your talent and we are here to help you out
+in this.So be ready to blow peoples' mind with your talent.</em></p><br><br>
+
+<h2 id="leave" class="this"><br>Before we get started you have to fill the form given below to get registerd:<h2>
+<!--from description-->
+<form class="table" action="submit.html" onsubmit="return validate();">
+<h2 class="main">Register Yourselves!!</h2>
+&nbsp<label for="fname">First Name:</label><br>
+&nbsp<input type="text" name="fname" id="fname" onblur="check();"><span id="msg" class="warn"></span><br>
+&nbsp<label for="lname">Last Name:</label><br>
+&nbsp<input type="text" name="lname" id="lname" required><br>
+&nbsp<label for="age">Age:</label><br>
+&nbsp<input type="number" name="age" id="age" min="10" max="100" onblur="scan();"><span id="msg1" class="warn"></span><br>
+&nbsp<label for="email">Email:</label><br>
+&nbsp<input type="email" id="email" name="email" placeholder="Enter a valid email address"><br>
+&nbsp<label for="pass">Enter your password</label><br> 
+&nbsp<input type="password" id="pass" name="pass"><br>
+&nbsp<label for="pass1">Enter your password again</label><br>
+&nbsp<input type="password" id="pass1" name="pass1"><br>
+&nbsp<label for="dob">Date Of Birth:</label><br>
+&nbsp<input type="date" id="dob" name="dob"><br>
+&nbsp Gender:<br>
+&nbsp<input type="radio" id="male" name="gender" value="male" required>
+&nbsp<label for="male">Male</label><br>
+&nbsp<input type="radio" id="female" name="gender" value"female">
+&nbsp<label for="female">Female</label><br>
+&nbsp<input type="radio" id="other" name="gender" value="kother">
+&nbsp<label for="other">Other</label><br>
+&nbsp Which type of music do you like the most?<br>
+&nbsp<select type="text" id="large">
+<option>Classical</option>
+<option>Western</option>
+<option>Hip-Hop</option>
+</select><br>
+&nbsp Which of these instruments do you know how to play<br>
+&nbsp<input type="checkbox" id="piano" name="instrument" value="paino">
+&nbsp<label for="piano">Piano</label><br>
+&nbsp<input type="checkbox" id="guitar" name="instrument" value="guitar">
+&nbsp<label for="guitar">Guitar</label><br>
+&nbsp<input type="checkbox" id="drums" name="instrument" value="drums">
+&nbsp<label for="drums">Drums</label><br>
+&nbsp<input type="checkbox" id="flute" name="instrument" value="flute">
+&nbsp<label for="flute">Flute</label><br>
+
+&nbsp<button onclick="return checkit();" id="large"> Submit </button>
+&nbsp<input type="reset" value="reset" name="reset" id="large"> 
+</form>
+</body>
+</html>
