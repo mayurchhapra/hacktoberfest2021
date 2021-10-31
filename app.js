@@ -13,7 +13,7 @@ app.use('/', (req, res, next) => {
   res
     .status(200)
     .json({
-      message: 'Welcome to the Hacktoberfest 2021',
+      message: 'Hey guys! Lets start hacking!',
       method: req.method,
       endpoint: req.originalUrl
     })
