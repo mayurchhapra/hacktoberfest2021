@@ -1,5 +1,6 @@
 const healthCheck = require('./v1/health-check');
 const sureshmController = require('./v1/sureshm');
+const mayur_sim = require('./v1/mayur-sim');
 
 const mayur = require('./v1/mayur')
 const sumit = require('./v1/sumit');
@@ -18,6 +19,7 @@ module.exports = (app) => {
     'health-check': healthCheck,
     'mayur': mayur,
     'sureshm': sureshmController,
-    'sumit': sumit
+    'mayur-sim': mayur_sim,
+    'sumit': sumit,
   });
 };
